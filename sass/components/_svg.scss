@@ -1,0 +1,12 @@
+
+////////// ICONS //////////
+
+.svg {
+    display: inline-block;
+    padding: 14px;
+}
+.border-hero{
+    @media screen and(max-width:1199px) {
+        display: none;
+    }
+}

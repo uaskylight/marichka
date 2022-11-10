@@ -1,0 +1,77 @@
+//////////   BUTTON //////////
+
+.btn {
+  cursor: pointer;
+  border: 1;
+  align-items: flex-start;
+  padding: 8px 24px;
+  width: 115px;
+  height: 43px;
+  border-radius: 8px;
+  &:hover {
+    background-color: aqua;
+    color: white;
+  }
+  &--yellow {
+    margin-bottom: 20px;
+    background: #fdc435;
+
+    @media screen and(min-width:480px) {
+      margin-bottom: 50px;
+    }
+  }
+  &--white {
+    margin-bottom: 20px;
+    @media screen and(min-width:480px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.btn-about {
+  cursor: pointer;
+  border: 0;
+  padding: 8px 24px;
+  width: 150px;
+  height: 43px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 24px;
+  @media screen and (min-width:768px) {
+    margin: 10px;
+
+  }
+}
+
+//////// MOBILE BUTTON //////////
+
+.btn-menu-mobile {
+  padding: 0;
+  margin: 0;
+  // margin-left: auto;
+  border: none;
+  background-color: transparent;
+  fill: white;
+  z-index: 3;
+  &:active {
+    fill: yellow;
+  }
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+
+.btn-menu-mobile.is-open .icon-mobile {
+  display: block;
+}
+
+.btn-menu-mobile.is-open .icon-close-mobile {
+  display: none;
+}
+
+.btn-menu-mobile .icon-mobile {
+  display: none;
+}
+.icon-close-mobile {
+  fill: rgb(114, 114, 114);
+}

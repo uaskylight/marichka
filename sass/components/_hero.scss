@@ -1,0 +1,92 @@
+////////// HERO ///////////
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4));
+
+  @media screen and(max-width:460px) {
+    
+  
+    background-image: url(/images/aaaa.jpg);
+    background-position: center;
+  }
+  @media screen and(min-width:480px) and(max-width:800px) {
+    background-position: center;
+  }
+  @media screen and(min-width:480px) {
+    background-color: gray;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4));
+    background-image: url(/images/main1.jpg);
+    background-repeat: no-repeat;
+  }
+  @media screen and(max-width:1200px) {
+    background-color: gray;
+    background-image: url(/images/main1.jpg);
+    background-repeat: no-repeat;
+  }
+
+  // @media screen and(min-width:1199px) {
+  //   background-image: url(/images/main1.jpg);
+  //   background-size: cover;
+  // }
+  &__container {
+    padding-top: 20px;
+    @media screen and(max-width:479px) {
+      width: 160px;
+    }
+    @media screen and(min-width:480px) {
+      width: 240px;
+    }
+    @media screen and(min-width:768px) {
+      width: 340px;
+    }
+  }
+
+  &__texttop {
+    margin-bottom: 20px;
+    color: yellow;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    @media screen and(min-width:480px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__textMain {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    color: #25282b;
+    margin-bottom: 60px;
+
+    @media screen and(max-width:479px) {
+      font-size: 26px;
+    }
+  }
+  &__title {
+    margin-bottom: 50px;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    @media screen and(min-width:480px) {
+      margin-bottom: 255px;
+    }
+    @media screen and(max-width:479px) {
+      font-size: 13px;
+    }
+  }
+}
